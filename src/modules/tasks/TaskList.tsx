@@ -1,54 +1,36 @@
-import type { Task, TaskStatus } from '../../shared/types';
-import { boardColumns } from '../dashboard';
+import type { Task } from '../../shared/types';
 
 type TaskListProps = {
   tasks: Task[];
-  onMoveTask?: (taskId: string, status: TaskStatus) => void;
+  onEdit: (task: Task) => void;
+  onDelete: (taskId: string) => void;
 };
 
-const columnTasks = (tasks: Task[], status: TaskStatus) => tasks.filter((task) => task.status === status);
+export function TaskList({ tasks, onEdit, onDelete }: TaskListProps) {
+  if (tasks.length === 0) {
+    return (
+      <div className="empty-state empty-illustrated">
+        <strong>No tasks yet</strong>
+        <p>Add a task to start filling the queue and move work across the board.</p>
+      </div>
+    );
+  }
 
-export function TaskList({ tasks, onMoveTask }: TaskListProps) {
   return (
-    <div className="kanban-board">
-      {boardColumns.map((column) => {
-        const items = columnTasks(tasks, column.id);
-        return (
-          <section key={column.id} className="kanban-column">
-            <header className="kanban-column__header">
-              <div>
-                <span className="kicker">{column.title}</span>
-                <h3>{items.length} tasks</h3>
-              </div>
-            </header>
-            <div className="stack">
-              {items.length === 0 ? (
-                <p className="empty-state">Drop a task here.</p>
-              ) : (
-                items.map((task) => (
-                  <article key={task.id} className="kanban-card">
-                    <div>
-                      <strong>{task.title}</strong>
-                      <p>
-                        {task.projectName} · due {task.dueDate}
-                      </p>
-                    </div>
-                    <div className="kanban-actions">
-                      {boardColumns
-                        .filter((next) => next.id !== column.id)
-                        .map((next) => (
-                          <button key={next.id} type="button" onClick={() => onMoveTask?.(task.id, next.id)}>
-                            Move to {next.title}
-                          </button>
-                        ))}
-                    </div>
-                  </article>
-                ))
-              )}
-            </div>
-          </section>
-        );
-      })}
+    <div className="stack">
+      {tasks.map((task) => (
+        <div key={task.id} className="row-card task-row">
+          <div>
+            <strong>{task.title}</strong>
+            <p>{task.projectName} · due {task.dueDate}</p>
+          </div>
+          <div className="kanban-actions">
+            <span className={`pill status-${task.status}`}>{task.status.replace('_', ' ')}</span>
+            <button type="button" onClick={() => onEdit(task)}>Edit</button>
+            <button type="button" className="danger-button" onClick={() => onDelete(task.id)}>Delete</button>
+          </div>
+        </div>
+      ))}
     </div>
   );
 }

@@ -2,11 +2,18 @@ import type { Project } from '../../shared/types';
 
 type ProjectListProps = {
   projects: Project[];
+  onEdit: (project: Project) => void;
+  onDelete: (projectId: string) => void;
 };
 
-export function ProjectList({ projects }: ProjectListProps) {
+export function ProjectList({ projects, onEdit, onDelete }: ProjectListProps) {
   if (projects.length === 0) {
-    return <p className="empty-state">No projects yet. Create the first one to get started.</p>;
+    return (
+      <div className="empty-state empty-illustrated">
+        <strong>No projects yet</strong>
+        <p>Create the first project to start organizing tasks, ownership, and delivery.</p>
+      </div>
+    );
   }
 
   return (
@@ -17,7 +24,11 @@ export function ProjectList({ projects }: ProjectListProps) {
             <strong>{project.name}</strong>
             <p>{project.taskCount} tasks</p>
           </div>
-          <span className={`pill pill-${project.status}`}>{project.status}</span>
+          <div className="kanban-actions">
+            <span className={`pill pill-${project.status}`}>{project.status}</span>
+            <button type="button" onClick={() => onEdit(project)}>Edit</button>
+            <button type="button" className="danger-button" onClick={() => onDelete(project.id)}>Delete</button>
+          </div>
         </div>
       ))}
     </div>
