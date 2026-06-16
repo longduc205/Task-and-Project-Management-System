@@ -17,12 +17,12 @@ export function TaskList({ tasks, onEdit, onDelete }: TaskListProps) {
   }
 
   return (
-    <div className="stack">
+    <div className="stack" style={{ padding: 0, gap: 0 }}>
       {tasks.map((task) => (
-        <div key={task.id} className="row-card task-row">
-          <div>
+        <div key={task.id} className="task-row">
+          <div className="task-row-main">
             <strong>{task.title}</strong>
-            <p>{task.projectName} · due {task.dueDate}</p>
+            <span>{task.projectName} · due {task.dueDate}</span>
           </div>
           <div className="kanban-actions">
             <span className={`pill status-${task.status}`}>{task.status.replace('_', ' ')}</span>

@@ -1,4 +1,1 @@
-export const usersModule = {
-  name: 'users',
-  description: 'user profiles, roles, and team membership',
-};
+export { UserList } from './UserList';

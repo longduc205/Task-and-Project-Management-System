@@ -1,4 +1,2 @@
-export const authModule = {
-  name: 'auth',
-  description: 'login, session handling, and access control',
-};
+export { LoginPage } from './LoginPage';
+export { AuthInfoView } from './AuthInfoView';

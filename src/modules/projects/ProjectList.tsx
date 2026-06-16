@@ -17,15 +17,15 @@ export function ProjectList({ projects, onEdit, onDelete }: ProjectListProps) {
   }
 
   return (
-    <div className="stack">
+    <div className="stack" style={{ padding: 0, gap: 0 }}>
       {projects.map((project) => (
-        <div key={project.id} className="row-card">
-          <div>
+        <div key={project.id} className="task-row">
+          <div className="task-row-main">
             <strong>{project.name}</strong>
-            <p>{project.taskCount} tasks</p>
+            <span>{project.taskCount} tasks</span>
           </div>
           <div className="kanban-actions">
-            <span className={`pill pill-${project.status}`}>{project.status}</span>
+            <span className={`pill status-${project.status}`}>{project.status.replace('_', ' ')}</span>
             <button type="button" onClick={() => onEdit(project)}>Edit</button>
             <button type="button" className="danger-button" onClick={() => onDelete(project.id)}>Delete</button>
           </div>

@@ -1,0 +1,376 @@
+{
+  "users": [
+    {
+      "id": "u-1",
+      "name": "Duc Nguyen",
+      "email": "duc@taskstudio.io",
+      "role": "admin",
+      "password": "demo1234",
+      "avatarColor": "#0C66E4"
+    },
+    {
+      "id": "u-2",
+      "name": "Alice Chen",
+      "email": "alice@taskstudio.io",
+      "role": "member",
+      "password": "alice123",
+      "avatarColor": "#E56910"
+    },
+    {
+      "id": "u-3",
+      "name": "Bob Martinez",
+      "email": "bob@taskstudio.io",
+      "role": "member",
+      "password": "bob12345",
+      "avatarColor": "#216E4E"
+    },
+    {
+      "id": "u-4",
+      "name": "Carol Davis",
+      "email": "carol@taskstudio.io",
+      "role": "viewer",
+      "password": "carol123",
+      "avatarColor": "#943D73"
+    }
+  ],
+  "projects": [
+    {
+      "id": "p-1",
+      "name": "Launch Pad",
+      "status": "active",
+      "taskCount": 5,
+      "description": "Core product launch initiative \u2014 onboarding, feature flags, and release pipeline.",
+      "createdAt": "2026-05-01"
+    },
+    {
+      "id": "p-2",
+      "name": "Ops Board",
+      "status": "active",
+      "taskCount": 4,
+      "description": "Internal operations dashboard for sprint tracking and incident response.",
+      "createdAt": "2026-05-10"
+    },
+    {
+      "id": "p-3",
+      "name": "Design System",
+      "status": "active",
+      "taskCount": 4,
+      "description": "Shared component library \u2014 tokens, primitives, and composite patterns.",
+      "createdAt": "2026-04-15"
+    },
+    {
+      "id": "p-4",
+      "name": "Mobile App",
+      "status": "active",
+      "taskCount": 3,
+      "description": "React Native companion app for field teams and on-the-go task management.",
+      "createdAt": "2026-05-20"
+    },
+    {
+      "id": "p-5",
+      "name": "Data Pipeline",
+      "status": "paused",
+      "taskCount": 2,
+      "description": "ETL pipeline for analytics \u2014 event ingestion, transformation, and warehouse sync.",
+      "createdAt": "2026-03-28"
+    },
+    {
+      "id": "p-6",
+      "name": "Archive",
+      "status": "archived",
+      "taskCount": 2,
+      "description": "Legacy project artifacts preserved for reference and compliance.",
+      "createdAt": "2025-12-01"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "T-101",
+      "title": "Design onboarding flow",
+      "status": "in_progress",
+      "projectId": "p-1",
+      "projectName": "Launch Pad",
+      "dueDate": "2026-06-18",
+      "description": "Create the step-by-step onboarding wizard for new workspace members.",
+      "assigneeId": "u-1"
+    },
+    {
+      "id": "T-102",
+      "title": "Finalize task filters",
+      "status": "todo",
+      "projectId": "p-1",
+      "projectName": "Launch Pad",
+      "dueDate": "2026-06-20",
+      "description": "Implement status, assignee, and date-range filters on the task list view.",
+      "assigneeId": "u-2"
+    },
+    {
+      "id": "T-103",
+      "title": "Set up feature flags",
+      "status": "todo",
+      "projectId": "p-1",
+      "projectName": "Launch Pad",
+      "dueDate": "2026-06-22",
+      "description": "Integrate LaunchDarkly SDK and create toggle definitions for beta features.",
+      "assigneeId": "u-1"
+    },
+    {
+      "id": "T-104",
+      "title": "Write release notes template",
+      "status": "done",
+      "projectId": "p-1",
+      "projectName": "Launch Pad",
+      "dueDate": "2026-06-10",
+      "description": "Create a reusable markdown template for version release announcements.",
+      "assigneeId": "u-4"
+    },
+    {
+      "id": "T-105",
+      "title": "Configure CI pipeline",
+      "status": "in_progress",
+      "projectId": "p-1",
+      "projectName": "Launch Pad",
+      "dueDate": "2026-06-19",
+      "description": "Set up GitHub Actions for lint, test, build, and deploy stages.",
+      "assigneeId": "u-3"
+    },
+    {
+      "id": "T-106",
+      "title": "Review sprint notes",
+      "status": "done",
+      "projectId": "p-2",
+      "projectName": "Ops Board",
+      "dueDate": "2026-06-14",
+      "description": "Compile and distribute sprint retrospective notes to stakeholders.",
+      "assigneeId": "u-3"
+    },
+    {
+      "id": "T-107",
+      "title": "Prepare project handoff",
+      "status": "in_progress",
+      "projectId": "p-2",
+      "projectName": "Ops Board",
+      "dueDate": "2026-06-22",
+      "description": "Document ownership transfer procedures for the operations dashboard.",
+      "assigneeId": "u-1"
+    },
+    {
+      "id": "T-108",
+      "title": "Build incident tracker widget",
+      "status": "todo",
+      "projectId": "p-2",
+      "projectName": "Ops Board",
+      "dueDate": "2026-06-25",
+      "description": "Add a real-time incident severity tracker to the ops dashboard.",
+      "assigneeId": "u-2"
+    },
+    {
+      "id": "T-109",
+      "title": "Create SLA monitoring view",
+      "status": "todo",
+      "projectId": "p-2",
+      "projectName": "Ops Board",
+      "dueDate": "2026-06-28",
+      "description": "Build a view that tracks SLA compliance for active incidents.",
+      "assigneeId": "u-3"
+    },
+    {
+      "id": "T-110",
+      "title": "Define color token palette",
+      "status": "done",
+      "projectId": "p-3",
+      "projectName": "Design System",
+      "dueDate": "2026-06-05",
+      "description": "Establish the base color tokens using OKLCH and semantic naming conventions.",
+      "assigneeId": "u-2"
+    },
+    {
+      "id": "T-111",
+      "title": "Build Button component",
+      "status": "done",
+      "projectId": "p-3",
+      "projectName": "Design System",
+      "dueDate": "2026-06-08",
+      "description": "Create primary, secondary, ghost, and danger button variants with proper states.",
+      "assigneeId": "u-2"
+    },
+    {
+      "id": "T-112",
+      "title": "Build Modal component",
+      "status": "in_progress",
+      "projectId": "p-3",
+      "projectName": "Design System",
+      "dueDate": "2026-06-20",
+      "description": "Implement accessible modal dialog with backdrop, focus trap, and animations.",
+      "assigneeId": "u-4"
+    },
+    {
+      "id": "T-113",
+      "title": "Document spacing scale",
+      "status": "todo",
+      "projectId": "p-3",
+      "projectName": "Design System",
+      "dueDate": "2026-06-24",
+      "description": "Write guidelines for the 4px base spacing scale across all components.",
+      "assigneeId": "u-2"
+    },
+    {
+      "id": "T-114",
+      "title": "Scaffold React Native project",
+      "status": "in_progress",
+      "projectId": "p-4",
+      "projectName": "Mobile App",
+      "dueDate": "2026-06-21",
+      "description": "Initialize the Expo project with TypeScript, navigation, and basic screens.",
+      "assigneeId": "u-3"
+    },
+    {
+      "id": "T-115",
+      "title": "Design mobile task card",
+      "status": "todo",
+      "projectId": "p-4",
+      "projectName": "Mobile App",
+      "dueDate": "2026-06-26",
+      "description": "Create a compact task card component optimized for mobile viewports.",
+      "assigneeId": "u-2"
+    },
+    {
+      "id": "T-116",
+      "title": "Implement push notifications",
+      "status": "todo",
+      "projectId": "p-4",
+      "projectName": "Mobile App",
+      "dueDate": "2026-06-30",
+      "description": "Integrate Expo Notifications for task assignment and deadline alerts.",
+      "assigneeId": "u-1"
+    },
+    {
+      "id": "T-117",
+      "title": "Design ETL schema",
+      "status": "done",
+      "projectId": "p-5",
+      "projectName": "Data Pipeline",
+      "dueDate": "2026-05-15",
+      "description": "Define the extraction, transformation, and loading schema for event data.",
+      "assigneeId": "u-1"
+    },
+    {
+      "id": "T-118",
+      "title": "Set up Airflow DAGs",
+      "status": "todo",
+      "projectId": "p-5",
+      "projectName": "Data Pipeline",
+      "dueDate": "2026-07-01",
+      "description": "Configure Apache Airflow directed acyclic graphs for scheduled pipeline runs.",
+      "assigneeId": "u-3"
+    },
+    {
+      "id": "T-119",
+      "title": "Migrate legacy docs",
+      "status": "done",
+      "projectId": "p-6",
+      "projectName": "Archive",
+      "dueDate": "2026-01-15",
+      "description": "Transfer all documentation from the legacy Wiki to the new knowledge base.",
+      "assigneeId": "u-4"
+    },
+    {
+      "id": "T-120",
+      "title": "Archive old repositories",
+      "status": "done",
+      "projectId": "p-6",
+      "projectName": "Archive",
+      "dueDate": "2026-02-01",
+      "description": "Set deprecated GitHub repositories to archived status with final READMEs.",
+      "assigneeId": "u-3"
+    }
+  ],
+  "activities": [
+    {
+      "id": "act-1",
+      "userId": "u-1",
+      "user": "Duc Nguyen",
+      "action": "moved",
+      "target": "Design onboarding flow \u2192 In Progress",
+      "time": "10m ago",
+      "type": "status"
+    },
+    {
+      "id": "act-2",
+      "userId": "u-2",
+      "user": "Alice Chen",
+      "action": "commented on",
+      "target": "Build Button component",
+      "time": "35m ago",
+      "type": "comment"
+    },
+    {
+      "id": "act-3",
+      "userId": "u-1",
+      "user": "Duc Nguyen",
+      "action": "created",
+      "target": "Implement push notifications",
+      "time": "1h ago",
+      "type": "create"
+    },
+    {
+      "id": "act-4",
+      "userId": "u-3",
+      "user": "Bob Martinez",
+      "action": "completed",
+      "target": "Review sprint notes",
+      "time": "2h ago",
+      "type": "status"
+    },
+    {
+      "id": "act-5",
+      "userId": "u-4",
+      "user": "Carol Davis",
+      "action": "commented on",
+      "target": "Build Modal component",
+      "time": "3h ago",
+      "type": "comment"
+    },
+    {
+      "id": "act-6",
+      "userId": "u-2",
+      "user": "Alice Chen",
+      "action": "moved",
+      "target": "Document spacing scale \u2192 Todo",
+      "time": "4h ago",
+      "type": "status"
+    },
+    {
+      "id": "act-7",
+      "userId": "u-3",
+      "user": "Bob Martinez",
+      "action": "created",
+      "target": "Create SLA monitoring view",
+      "time": "5h ago",
+      "type": "create"
+    },
+    {
+      "id": "act-8",
+      "userId": "u-1",
+      "user": "Duc Nguyen",
+      "action": "moved",
+      "target": "Configure CI pipeline \u2192 In Progress",
+      "time": "6h ago",
+      "type": "status"
+    }
+  ],
+  "columns": [
+    {
+      "id": "todo",
+      "title": "To Do"
+    },
+    {
+      "id": "in_progress",
+      "title": "In Progress"
+    },
+    {
+      "id": "done",
+      "title": "Done"
+    }
+  ]
+}
