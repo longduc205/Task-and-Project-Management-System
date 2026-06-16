@@ -1,0 +1,797 @@
+/* cartesian-final / style.css
+ * Scoped overrides for the Cartesian design system.
+ * Extends base.css + cartesian.css tokens.
+ */
+
+.tpl-cartesian .slide {
+  background: var(--bg);
+  padding: 72px 96px;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* ─── Typography scale ────────────────────────────────────────────────────────── */
+.tpl-cartesian .kicker {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 16px 0;
+}
+
+.tpl-cartesian .h1 {
+  font-family: var(--font-display);
+  font-size: clamp(44px, 5.5vw, 80px);
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  margin: 0 0 24px 0;
+  font-weight: 600;
+}
+
+.tpl-cartesian .h2 {
+  font-family: var(--font-display);
+  font-size: clamp(30px, 3.4vw, 48px);
+  line-height: 1.18;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin: 0 0 28px 0;
+  font-weight: 600;
+}
+
+.tpl-cartesian .h3 {
+  font-family: var(--font-display);
+  font-size: clamp(20px, 2.2vw, 28px);
+  line-height: 1.3;
+  color: var(--ink);
+  margin: 0 0 14px 0;
+  font-weight: 600;
+}
+
+.tpl-cartesian .lede {
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  font-family: var(--font-sans);
+  font-weight: 300;
+}
+
+.tpl-cartesian .dim {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  margin: 0;
+}
+
+.tpl-cartesian .caption {
+  font-size: 12px;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  letter-spacing: 0.05em;
+}
+
+/* ─── Spacing helpers ────────────────────────────────────────────────────────── */
+.tpl-cartesian .mt-xs  { margin-top: 8px; }
+.tpl-cartesian .mt-s   { margin-top: 14px; }
+.tpl-cartesian .mt-m   { margin-top: 20px; }
+.tpl-cartesian .mt-l   { margin-top: 32px; }
+.tpl-cartesian .mt-xl  { margin-top: 48px; }
+
+.tpl-cartesian .mb-s   { margin-bottom: 12px; }
+.tpl-cartesian .mb-m   { margin-bottom: 20px; }
+.tpl-cartesian .mb-l   { margin-bottom: 32px; }
+
+.tpl-cartesian .tc     { text-align: center; }
+.tpl-cartesian .tl     { text-align: left; }
+.tpl-cartesian .tr     { text-align: right; }
+
+/* ─── Cards ──────────────────────────────────────────────────────────────────── */
+.tpl-cartesian .card {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-md);
+  padding: 22px 24px;
+  box-shadow: var(--shadow-sm);
+}
+
+.tpl-cartesian .card-elev {
+  background: var(--bg-elev);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-md);
+  padding: 22px 24px;
+}
+
+.tpl-cartesian .card-accent {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-top: 3px solid var(--accent);
+  border-radius: var(--radius-md);
+  padding: 22px 24px;
+}
+
+.tpl-cartesian .card h4 {
+  font-family: var(--font-display);
+  font-size: 18px;
+  color: var(--ink);
+  margin: 0 0 10px 0;
+}
+
+.tpl-cartesian .card .eyebrow {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 8px 0;
+}
+
+/* KPI card */
+.tpl-cartesian .kpi-card {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-md);
+  padding: 24px 20px;
+  box-shadow: var(--shadow-sm);
+}
+
+.tpl-cartesian .kpi-card .kpi-value {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 3.2vw, 48px);
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1;
+  margin: 8px 0 6px;
+  font-variant-numeric: tabular-nums;
+}
+
+.tpl-cartesian .kpi-card .kpi-delta {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.tpl-cartesian .kpi-card .kpi-delta.pos { color: var(--ok); }
+.tpl-cartesian .kpi-card .kpi-delta.neg { color: var(--warn); }
+
+/* ─── Grids ──────────────────────────────────────────────────────────────────── */
+.tpl-cartesian .grid {
+  display: grid;
+  gap: 16px;
+}
+.tpl-cartesian .g2 { grid-template-columns: 1fr 1fr; }
+.tpl-cartesian .g3 { grid-template-columns: repeat(3, 1fr); }
+.tpl-cartesian .g4 { grid-template-columns: repeat(4, 1fr); }
+.tpl-cartesian .g5 { grid-template-columns: repeat(5, 1fr); }
+
+/* ─── Section divider ─────────────────────────────────────────────────────────── */
+.tpl-cartesian .section-divider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 72px 120px;
+}
+
+.tpl-cartesian .section-divider .section-index {
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-style: italic;
+  color: var(--accent);
+  letter-spacing: 0.08em;
+  margin-bottom: 20px;
+}
+
+.tpl-cartesian .section-divider .h1 {
+  font-family: var(--font-display);
+  font-size: clamp(52px, 7vw, 96px);
+  line-height: 1.0;
+  font-weight: 700;
+  color: var(--ink);
+  margin: 0 0 32px 0;
+  max-width: 900px;
+}
+
+.tpl-cartesian .section-divider .section-rule {
+  width: 80px;
+  height: 2px;
+  background: var(--accent);
+  margin: 0 0 24px 0;
+}
+
+.tpl-cartesian .section-divider .section-desc {
+  font-family: var(--font-sans);
+  font-size: 18px;
+  color: var(--ink-soft);
+  font-weight: 300;
+  max-width: 600px;
+}
+
+/* ─── Tables ─────────────────────────────────────────────────────────────────── */
+.tpl-cartesian table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  font-family: var(--font-sans);
+}
+
+.tpl-cartesian table th {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 500;
+  padding: 10px 14px;
+  border-bottom: 2px solid var(--rule);
+  text-align: left;
+  white-space: nowrap;
+}
+
+.tpl-cartesian table th.num,
+.tpl-cartesian table td.num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.tpl-cartesian table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--rule);
+  color: var(--ink);
+  vertical-align: top;
+  line-height: 1.5;
+}
+
+.tpl-cartesian table tr:last-child td {
+  border-bottom: none;
+}
+
+.tpl-cartesian table tr:hover td {
+  background: var(--bg-elev);
+}
+
+.tpl-cartesian table .row-critical td {
+  border-left: 3px solid var(--accent);
+  background: rgba(140, 90, 46, 0.04);
+}
+
+.tpl-cartesian table .row-critical td:first-child {
+  padding-left: 11px;
+}
+
+.tpl-cartesian .table-wrap {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-md);
+  padding: 4px 8px;
+  overflow: auto;
+}
+
+/* ─── Timeline ─────────────────────────────────────────────────────────────────── */
+.tpl-cartesian .timeline {
+  position: relative;
+  padding: 40px 0 0;
+}
+
+.tpl-cartesian .timeline::before {
+  content: "";
+  position: absolute;
+  left: 0; right: 0;
+  top: 56px;
+  height: 1px;
+  background: var(--rule);
+}
+
+.tpl-cartesian .timeline-row {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+  align-items: start;
+}
+
+.tpl-cartesian .timeline-item {
+  position: relative;
+  padding-top: 72px;
+  text-align: center;
+}
+
+.tpl-cartesian .timeline-dot {
+  position: absolute;
+  top: 44px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 3px solid var(--accent);
+  box-shadow: 0 0 0 3px var(--bg), 0 0 0 4px var(--rule);
+}
+
+.tpl-cartesian .timeline-week {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  text-transform: uppercase;
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  text-align: center;
+}
+
+.tpl-cartesian .timeline-label {
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.3;
+}
+
+.tpl-cartesian .timeline-date {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+/* ─── Bullet list ─────────────────────────────────────────────────────────────── */
+.tpl-cartesian .bullet-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tpl-cartesian .bullet-list li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 12px;
+  font-size: 15px;
+  color: var(--ink);
+  line-height: 1.6;
+}
+
+.tpl-cartesian .bullet-list li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* ─── WBS Tree ─────────────────────────────────────────────────────────────────── */
+.tpl-cartesian .wbs-tree {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  line-height: 2;
+  color: var(--ink);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tpl-cartesian .wbs-tree .wbs-1 {
+  color: var(--ink);
+  font-weight: 600;
+  font-family: var(--font-display);
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.tpl-cartesian .wbs-tree .wbs-2 {
+  padding-left: 24px;
+  color: var(--ink-soft);
+  font-weight: 500;
+}
+
+.tpl-cartesian .wbs-tree .wbs-3 {
+  padding-left: 48px;
+  color: var(--ink-soft);
+  font-size: 13px;
+}
+
+.tpl-cartesian .wbs-tree .wbs-num {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* ─── RACI Matrix ─────────────────────────────────────────────────────────────── */
+.tpl-cartesian .raci-cell {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  padding: 6px 8px;
+  border-radius: var(--radius-sm);
+}
+
+.tpl-cartesian .raci-cell.r { background: rgba(91, 107, 71, 0.15); color: var(--ok); }
+.tpl-cartesian .raci-cell.a { background: rgba(140, 90, 46, 0.15); color: var(--accent); }
+.tpl-cartesian .raci-cell.c { background: rgba(140, 90, 46, 0.08); color: var(--ink-soft); }
+.tpl-cartesian .raci-cell.i { background: rgba(138, 122, 102, 0.08); color: var(--muted); }
+
+/* ─── Risk heatmap ─────────────────────────────────────────────────────────────── */
+.tpl-cartesian .heatmap {
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.tpl-cartesian .heatmap td {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid var(--rule);
+  font-size: 12px;
+  font-family: var(--font-mono);
+  position: relative;
+  border-radius: var(--radius-sm);
+}
+
+.tpl-cartesian .heatmap .zone-high    { background: rgba(166, 93, 63, 0.18); }
+.tpl-cartesian .heatmap .zone-medium { background: rgba(196, 154, 108, 0.18); }
+.tpl-cartesian .heatmap .zone-low     { background: rgba(91, 107, 71, 0.10); }
+
+.tpl-cartesian .heatmap .risk-marker {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  line-height: 28px;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: var(--font-mono);
+  background: var(--bg);
+  border: 2px solid var(--ink);
+  color: var(--ink);
+}
+
+.tpl-cartesian .heatmap-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* ─── Budget chart (inline SVG area chart) ─────────────────────────────────── */
+.tpl-cartesian .chart-wrap {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-md);
+  padding: 24px;
+}
+
+/* ─── EVM KPI highlight ──────────────────────────────────────────────────────── */
+.tpl-cartesian .evm-hero {
+  font-family: var(--font-display);
+  font-size: clamp(48px, 5vw, 72px);
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.tpl-cartesian .evm-hero.neg { color: var(--warn); }
+.tpl-cartesian .evm-hero.pos { color: var(--ok); }
+
+/* ─── Conflict resolution steps ──────────────────────────────────────────────── */
+.tpl-cartesian .step-row {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 16px;
+  align-items: start;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.tpl-cartesian .step-row:last-child { border-bottom: none; }
+
+.tpl-cartesian .step-num {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1;
+  padding-top: 2px;
+}
+
+.tpl-cartesian .step-title {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+
+.tpl-cartesian .step-desc {
+  font-size: 13px;
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+
+/* ─── Slide divider / cover elements ────────────────────────────────────────── */
+.tpl-cartesian .cover-rule {
+  width: 60px;
+  height: 2px;
+  background: var(--accent);
+  margin: 20px 0;
+}
+
+.tpl-cartesian .slide-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 16px 0;
+}
+
+.tpl-cartesian .member-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--rule);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.tpl-cartesian .member-cell {
+  background: var(--surface);
+  padding: 18px 20px;
+}
+
+.tpl-cartesian .member-role {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
+.tpl-cartesian .member-name {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+
+.tpl-cartesian .member-id {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--ink-soft);
+}
+
+/* ─── Section TOC ─────────────────────────────────────────────────────────────── */
+.tpl-cartesian .toc-row {
+  display: grid;
+  grid-template-columns: 48px 1fr auto;
+  gap: 16px;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.tpl-cartesian .toc-row:first-child { border-top: 1px solid var(--rule); }
+
+.tpl-cartesian .toc-num {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 700;
+  font-style: italic;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.tpl-cartesian .toc-title {
+  font-family: var(--font-display);
+  font-size: 17px;
+  color: var(--ink);
+  font-weight: 400;
+}
+
+/* ─── Two column layout ──────────────────────────────────────────────────────── */
+.tpl-cartesian .col-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.tpl-cartesian .col-split aside {
+  padding-top: 4px;
+}
+
+/* ─── Stakeholder power/interest grid ────────────────────────────────────────── */
+.tpl-cartesian .stake-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2px;
+  background: var(--rule);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  width: 480px;
+  height: 300px;
+}
+
+.tpl-cartesian .stake-quad {
+  background: var(--surface);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tpl-cartesian .stake-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.tpl-cartesian .stake-name {
+  font-size: 13px;
+  font-family: var(--font-sans);
+  color: var(--ink);
+  font-weight: 500;
+}
+
+/* ─── Pull-quote / big number callout ─────────────────────────────────────── */
+.tpl-cartesian .pullquote {
+  border-left: 3px solid var(--accent);
+  padding: 16px 24px;
+  background: var(--bg-elev);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+.tpl-cartesian .pullquote blockquote {
+  font-family: var(--font-display);
+  font-size: clamp(20px, 2.4vw, 32px);
+  font-style: italic;
+  color: var(--ink);
+  line-height: 1.4;
+  margin: 0 0 12px;
+}
+
+.tpl-cartesian .pullquote cite {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--muted);
+  font-style: normal;
+}
+
+/* ─── Smart objective card ───────────────────────────────────────────────────── */
+.tpl-cartesian .smart-card {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-md);
+  padding: 20px 22px;
+  margin-bottom: 14px;
+}
+
+.tpl-cartesian .smart-tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.tpl-cartesian .smart-tag {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-elev);
+  color: var(--ink-soft);
+  border: 1px solid var(--rule);
+  text-transform: uppercase;
+}
+
+/* ─── Lesson learned ──────────────────────────────────────────────────────────── */
+.tpl-cartesian .lesson-row {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-md);
+  padding: 20px 22px;
+  margin-bottom: 12px;
+}
+
+.tpl-cartesian .lesson-id {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--accent);
+  letter-spacing: 0.08em;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.tpl-cartesian .lesson-title {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+
+.tpl-cartesian .lesson-evidence {
+  font-size: 13px;
+  color: var(--ink-soft);
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.tpl-cartesian .lesson-clo {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--ok);
+  background: rgba(91, 107, 71, 0.12);
+  border: 1px solid rgba(91, 107, 71, 0.3);
+  border-radius: var(--radius-sm);
+  padding: 2px 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* ─── Animations ─────────────────────────────────────────────────────────────── */
+.tpl-cartesian .anim-stagger-list > * {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.tpl-cartesian .anim-stagger-list.is-active > * {
+  opacity: 1;
+  transform: none;
+}
+
+.tpl-cartesian .anim-stagger-list > *:nth-child(1) { transition-delay: 0ms; }
+.tpl-cartesian .anim-stagger-list > *:nth-child(2) { transition-delay: 80ms; }
+.tpl-cartesian .anim-stagger-list > *:nth-child(3) { transition-delay: 160ms; }
+.tpl-cartesian .anim-stagger-list > *:nth-child(4) { transition-delay: 240ms; }
+.tpl-cartesian .anim-stagger-list > *:nth-child(5) { transition-delay: 320ms; }
+.tpl-cartesian .anim-stagger-list > *:nth-child(6) { transition-delay: 400ms; }
+.tpl-cartesian .anim-stagger-list > *:nth-child(7) { transition-delay: 480ms; }
+.tpl-cartesian .anim-stagger-list > *:nth-child(8) { transition-delay: 560ms; }
+.tpl-cartesian .anim-stagger-list > *:nth-child(9) { transition-delay: 640ms; }
+.tpl-cartesian .anim-stagger-list > *:nth-child(10) { transition-delay: 720ms; }
+
+/* Center layout helper */
+.tpl-cartesian .center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  padding: 72px 96px;
+}
+
+/* Two-column text */
+.tpl-cartesian .two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+/* Three column */
+.tpl-cartesian .three-col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* ─── Print / page-break helper ──────────────────────────────────────────────── */
+@media print {
+  .tpl-cartesian .slide {
+    page-break-after: always;
+  }
+}
