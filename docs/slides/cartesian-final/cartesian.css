@@ -1,0 +1,144 @@
+/**
+ * cartesian.css — "Cartesian" design system
+ * Quiet warm-neutral palette with classical Playfair serifs.
+ * Tasteful, unhurried, editorial.
+ *
+ * Token overrides for html-ppt base.css
+ * CSS custom properties are the single source of truth.
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* ─── Design Tokens ─────────────────────────────────────────────────────────── */
+:root {
+  /* Palette */
+  --bg:          #F5EFE6;   /* warm off-white, parchment */
+  --bg-elev:     #EDE4D3;   /* slightly deeper cream for cards */
+  --surface:     #FBF8F2;   /* lightest cream for highlights */
+
+  /* Text */
+  --ink:         #2B2419;   /* deep walnut, never pure black */
+  --ink-soft:    #5C4F3F;   /* muted brown-grey */
+  --muted:       #8A7A66;   /* warm grey for captions */
+
+  /* Lines */
+  --rule:        #D9CDB8;   /* hairline rules */
+  --border:      #D9CDB8;   /* same — used by base.css */
+
+  /* Accent */
+  --accent:      #8C5A2E;   /* burnt sienna / cognac — emphasis only */
+  --accent-2:    #C49A6C;   /* light tan */
+  --accent-soft: #E8D5BC;   /* very soft tan for backgrounds */
+
+  /* Semantic */
+  --ok:          #5B6B47;   /* olive, positive deltas */
+  --warn:        #A65D3F;   /* rust, negative deltas */
+  --bad:         #A65D3F;   /* rust — same as warn for this palette */
+
+  /* Surfaces (base.css tokens) */
+  --bg-soft:     #F0E9DD;
+  --surface-2:   #E8DFD0;
+
+  /* Text levels (base.css tokens) */
+  --text-1:      #2B2419;
+  --text-2:      #5C4F3F;
+  --text-3:      #8A7A66;
+
+  /* Gradients (minimal use) */
+  --grad:        linear-gradient(135deg, #8C5A2E, #C49A6C);
+  --grad-soft:   linear-gradient(135deg, #E8D5BC, #F5EFE6);
+
+  /* Typography */
+  --font-display: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+  --font-sans:    'Inter', 'Lora', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono:    'JetBrains Mono', ui-monospace, 'Fira Code', monospace;
+
+  /* Radius */
+  --radius-sm:   2px;
+  --radius:      4px;
+  --radius-md:   6px;
+  --radius-lg:   12px;
+
+  /* Shadows */
+  --shadow:      0 1px 0 var(--rule), 0 12px 32px -16px rgba(43, 36, 25, 0.10);
+  --shadow-sm:   0 1px 0 var(--rule);
+  --shadow-md:   0 4px 16px -8px rgba(43, 36, 25, 0.12);
+}
+
+/* ─── Base resets (supplement base.css) ─────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+/* ─── Scrollbar styling ──────────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--rule); border-radius: 3px; }
+
+/* ─── Selection ──────────────────────────────────────────────────────────────── */
+::selection { background: var(--accent-soft); color: var(--ink); }
+
+/* ─── Gradient text utility ─────────────────────────────────────────────────── */
+.gradient-text {
+  background: var(--grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ─── Utility classes ────────────────────────────────────────────────────────── */
+.rule-top    { border-top: 1px solid var(--rule); }
+.rule-bottom { border-bottom: 1px solid var(--rule); }
+.accent      { color: var(--accent); font-weight: 600; }
+.accent-soft { color: var(--accent-2); }
+.muted       { color: var(--muted); }
+.mono        { font-family: var(--font-mono); }
+.serif       { font-family: var(--font-display); }
+.eyebrow     { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+
+/* Counter animation support */
+.counter { font-variant-numeric: tabular-nums; }
+
+/* ─── Slide chrome (deck-level elements) ─────────────────────────────────────── */
+.deck-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 40px;
+}
+
+.deck-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 14px;
+  border-top: 1px solid var(--rule);
+  margin-top: 40px;
+  font-size: 12px;
+  color: var(--muted);
+  font-family: var(--font-mono);
+}
+
+.deck-footer .slide-number {
+  font-family: var(--font-mono);
+  color: var(--muted);
+}
+
+/* ─── Progress bar ───────────────────────────────────────────────────────────── */
+.progress-bar {
+  position: fixed;
+  top: 0; left: 0;
+  height: 2px;
+  background: var(--accent);
+  transition: width 0.3s ease;
+  z-index: 999;
+}
+
+/* ─── Overview grid ──────────────────────────────────────────────────────────── */
+.deck[data-overview="true"] .slide {
+  opacity: 0.4;
+  transition: opacity 0.2s;
+}
+.deck[data-overview="true"] .slide.is-active {
+  opacity: 1;
+}
