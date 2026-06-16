@@ -1,18 +1,14 @@
-<!-- image -->
+![Image](/Users/azure_awabi/Downloads/Task-and-Project-Management-System/markdown_docs/08 Midterm Review_artifacts/image_000000_664f7f4f017974c191dbd724a5619203652347c45387be68497132c1d3f2c08b.png)
 
-②50
+@ 50
 
 ## Mid-Term Review IT Project Management (INS3044)
 
-120
-
-00
-
-440
+1.20
 
 ## Learning Objectives
 
-<!-- image -->
+![Image](/Users/azure_awabi/Downloads/Task-and-Project-Management-System/markdown_docs/08 Midterm Review_artifacts/image_000001_46f3116da89dd295e97f74c9e19e8e2bf35d708be228033e3761decf52065a21.png)
 
 - Synthesize project life cycle.
 - Integrate core management concepts.
@@ -21,19 +17,19 @@
 - Assess project quality standards.
 - Analyze and mitigate risks.
 
-<!-- image -->
+![Image](/Users/azure_awabi/Downloads/Task-and-Project-Management-System/markdown_docs/08 Midterm Review_artifacts/image_000002_28e766e7210a74380e814da06d6bdb7d4957de6939546b9afab863f2918a7a3d.png)
 
-<!-- image -->
+![Image](/Users/azure_awabi/Downloads/Task-and-Project-Management-System/markdown_docs/08 Midterm Review_artifacts/image_000003_13f5290369874f41ff8cd75482217873fa41fb178b31532279534aff760f8455.png)
 
-<!-- image -->
+![Image](/Users/azure_awabi/Downloads/Task-and-Project-Management-System/markdown_docs/08 Midterm Review_artifacts/image_000004_509b664a229b0f9e7bbf760fd7ba745e671c9785d44ac4a3e562473f059377a0.png)
 
-<!-- image -->
+![Image](/Users/azure_awabi/Downloads/Task-and-Project-Management-System/markdown_docs/08 Midterm Review_artifacts/image_000005_b5c241c03945e0584266b6edacce641b4c606dfb6620827e90980e81359e6770.png)
 
-## Practice: lron Triangle
+## Practice: Iron Triangle
 
-<!-- image -->
+![Image](/Users/azure_awabi/Downloads/Task-and-Project-Management-System/markdown_docs/08 Midterm Review_artifacts/image_000006_f5356384e2ef1753db473420ecc473c5241daebff70804476907db9fdba35f0e.png)
 
-- Scenario:UI designer leaves.
+- Scenario: Ul designer leaves.
 - Deadline remains Week 8.
 - How to manage scope?
 - How to manage cost?
@@ -41,14 +37,14 @@
 
 ## Schedule Planning
 
-<!-- image -->
+![Image](/Users/azure_awabi/Downloads/Task-and-Project-Management-System/markdown_docs/08 Midterm Review_artifacts/image_000007_5a14cdeefc43c315887d076825284f9ebff6b88f9a2db48cd0b7d1b158b5bf91.png)
 
-- Breakdownworkeffectively.
-- Sequence tasksverylogically.
-- DrawAoNnetworkdiagrams.
-- Identifythecriticalpath.
-- Find schedulebottleneckrisks.
-- Optimizeresource allocationplans.
+- Break down work effectively.
+- Sequence tasks very logically.
+- Draw AON network diagrams.
+- Identify the critical path.
+- Find schedule bottleneck risks.
+- Optimize resource allocation plans.
 
 - Review AON diagram rules.
 - Map tasks A through G.
@@ -58,13 +54,11 @@
 
 ## Practice: Critical Path
 
-<!-- image -->
-
-Time
+![Image](/Users/azure_awabi/Downloads/Task-and-Project-Management-System/markdown_docs/08 Midterm Review_artifacts/image_000008_84dbacc1a21893999302bee0eea1de0c12c4b7a37c7224a97211ce762e2a3deb.png)
 
 ## Cost Estimating
 
-<!-- image -->
+![Image](/Users/azure_awabi/Downloads/Task-and-Project-Management-System/markdown_docs/08 Midterm Review_artifacts/image_000009_243bb68b52313284a9605a3e9b20ec83a735966c5cc2ec97c82e2df0bf6f818b.png)
 
 - Estimate project costs accurately.
 - Establish solid baseline budgets.
@@ -72,9 +66,9 @@ Time
 - Monitor variance limits closely.
 - Prepare financial project closeout.
 
-<!-- image -->
+![Image](/Users/azure_awabi/Downloads/Task-and-Project-Management-System/markdown_docs/08 Midterm Review_artifacts/image_000010_ae95bc884c8258735fd04060cb9c4d360289abe1be5a7d64d62496abf000861d.png)
 
-## Practice:Financial Closeout
+## Practice: Financial Closeout
 
 - Update definition of done.
 - Ensure project closes correctly.
@@ -82,14 +76,14 @@ Time
 - Check budget against actuals.
 - Finalize all vendor payments.
 
-<!-- image -->
+![Image](/Users/azure_awabi/Downloads/Task-and-Project-Management-System/markdown_docs/08 Midterm Review_artifacts/image_000011_58b4c2d80374b0c62a5144e3fdbec9dbed4a68472fdaa10d66ec4db1a0b679f9.png)
 
 ## Quality Management
 
 |                 | Good Quality   | Poor Quality     |
 |-----------------|----------------|------------------|
-| Delivery Before | Prevention     | Internal Failure |
-| Delivery After  | Appraisal      | External Failure |
+| Before Delivery | Prevention     | Internal Failure |
+| After Delivery  | Appraisal      | External Failure |
 
 - Define quality standards clearly.
 - Invest in error prevention.
@@ -100,36 +94,36 @@ Time
 
 ## Practice: Cost of Quality
 
-- ·Identify error prevention costs.
+- Identify error prevention costs.
 - Identify work appraisal costs.
 - Define internal failure costs.
 - Define external failure costs.
 - Update quality done checklist.
 
-<!-- image -->
+![Image](/Users/azure_awabi/Downloads/Task-and-Project-Management-System/markdown_docs/08 Midterm Review_artifacts/image_000012_47429ae4337183853921516f26cdf03b9e6febd196410790a321fd47e4888bf1.png)
 
 ## Risk Management
 
-<!-- image -->
+![Image](/Users/azure_awabi/Downloads/Task-and-Project-Management-System/markdown_docs/08 Midterm Review_artifacts/image_000013_efeed6e147aab69de676fc91346f185ff0eb56cab995eec2cd670a0bf4c3b4e8.png)
 
-- Identify potential project risks.
-- Assess probability and impact.
-- Plan risk response strategies.
-- Allocate budget schedule reserves.
-- Monitor project risks continuously.
-- Update risk issue logs.
+- &gt; Identify potential project risks.
+- › Assess probability and impact.
+- &gt; Plan risk response strategies.
+- &gt; Allocate budget schedule reserves.
+- › Monitor project risks continuously.
+- › Update risk issue logs.
 
-## Practice:Risk Response
+## Practice: Risk Response
 
 - Name one project risk.
 - Assess impact and probability.
-- Determine riskresponse strategy.
+- Determine risk response strategy.
 - Assign a risk owner.
 - Establish contingency action plans.
 
 ## RISK CARD
 
-Risk Name:
+Risk Name: \_
 
 Impact Level:
 
@@ -139,7 +133,7 @@ Owner:
 
 ## Project Integration
 
-<!-- image -->
+![Image](/Users/azure_awabi/Downloads/Task-and-Project-Management-System/markdown_docs/08 Midterm Review_artifacts/image_000014_9948dc3d0e8cd3e428dc315379e4a00a4679f70cb84ebb8be1c5d44b10efe9c0.png)
 
 - Integration is absolutely critical.
 - Planning prevents poor performance.
@@ -148,4 +142,4 @@ Owner:
 - Review milestones continuously.
 - Closeout ensures final success.
 
-<!-- image -->
+![Image](/Users/azure_awabi/Downloads/Task-and-Project-Management-System/markdown_docs/08 Midterm Review_artifacts/image_000015_4a55a755da8a32cc54aa706adbd39a05b396c24ac8fe3295ea2366e806a86cfe.png)

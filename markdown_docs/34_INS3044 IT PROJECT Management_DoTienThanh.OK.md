@@ -1,4 +1,4 @@
-<!-- image -->
+![Image](/Users/azure_awabi/Downloads/Task-and-Project-Management-System/markdown_docs/34_INS3044 IT PROJECT Management_DoTienThanh.OK_artifacts/image_000000_5ea6cb5eaff578983b75d3eb80c87a5d7f8e4c39e68c434c4d3df2a181c8c09a.png)
 
 ## MODULE SYLLABUS IT PROJECT MANAGEMENT
 
@@ -34,12 +34,14 @@ Faculty of Applied Sciences
 
 |   N o | Name              | Title/Qualification   | Email                          |   Cell phone |
 |-------|-------------------|-----------------------|--------------------------------|--------------|
-|    1. | Nguyễn Phương Anh | Dr                    | phuonganhh.nguyen1 2@gmail.com |   0904969645 |
-|    2. | Do Tien Thanh     | MS                    | thando@vnuis.edu.vn            |   0937150786 |
+|     1 | Nguyễn Phương Anh | Dr                    | phuonganhh.nguyen1 2@gmail.com |   0904969645 |
+|     2 | Do Tien Thanh     | MS                    | thando@vnuis.edu.vn            |   0937150786 |
 
 The main aim of the course is to develop IT project management for students. Specific objectives are that this course provide analytical and research skills for a future IT project administrator, or IT  engineer,  or  system  architect,  to  take  a  leading  role  in  application  and  management  of  the construction of business systems for students.
 
-For knowledge,. Students will gain knowledge on planning and managing IT projects, including work division, estimation, planning, scheduling, and implementation. The module aims to enhance students' ability to manage small to medium-sized projects while fostering qualities like autonomy, responsibility,  perseverance,  flexibility,  confidence,  creativity,  and  professional  ethics.  This comprehensive approach ensures students are well-equipped to face challenges and succeed in IT project management roles For  skills  and  attitude,  students  can  develop  further  on  the  capacity  of  work  division,  work estimation skills, planning skills, scheduling and implementation skills. Students understand and apply project management tasks for the small and medium-size projects. Students also develop their autonomy and responsibility levels.
+For knowledge,. Students will gain knowledge on planning and managing IT projects, including work division, estimation, planning, scheduling, and implementation. The module aims to enhance students' ability to manage small to medium-sized projects while fostering qualities like autonomy, responsibility,  perseverance,  flexibility,  confidence,  creativity,  and  professional  ethics.  This comprehensive approach ensures students are well-equipped to face challenges and succeed in IT project management roles
+
+For  skills  and  attitude,  students  can  develop  further  on  the  capacity  of  work  division,  work estimation skills, planning skills, scheduling and implementation skills. Students understand and apply project management tasks for the small and medium-size projects. Students also develop their autonomy and responsibility levels.
 
 ## 8. Learning outcomes:
 
@@ -82,11 +84,11 @@ By successful in this module, students will be able to:
 |--------|------------------------------------|--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|-------------------|
 |      1 | Regular Assessment                 | 10%          | - It is important for students to attend all classes and to be punctual. - Students who are 10 (or more) minutes late will be counted as 'absent' for that class. Each unexcused absence results in a deduction of 1% in the 10% for attendance. Students who have a | CLO 1-9           | PLO 12, 13        |
 
-|   No . | Assessment s (items and methods)   | Proportion   | Description                                                                                                                                                  | CLO fulfillment   | PLO fulfillment   |
+| No .   | Assessment s (items and methods)   | Proportion   | Description                                                                                                                                                  | CLO fulfillment   | PLO fulfillment   |
 |--------|------------------------------------|--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|-------------------|
 |        |                                    |              | 'zero' for 'attendance' will not be allowed to take the final exam. - 80% of the grade comes from attendance, and 20% comes from in-class assignments.       |                   |                   |
-|      2 | Midterm Assessment                 | 30%          | Details on the mid-term exam will be announced by week 5. It is a written practical test or group presentation.                                              | CLO 1-9           | PLO 4, 6, 9, 10   |
-|      3 | Final exam                         | 60%          | Project and presentation Students choose and complete a project based on a real case study to solve problems by using knowledge and skills from this course. | CLO 1-9           | PLO 4, 6, 9, 10   |
+| 2      | Midterm Assessment                 | 30%          | Details on the mid-term exam will be announced by week 5. It is a written practical test or group presentation.                                              | CLO 1-9           | PLO 4, 6, 9, 10   |
+| 3      | Final exam                         | 60%          | Project and presentation Students choose and complete a project based on a real case study to solve problems by using knowledge and skills from this course. | CLO 1-9           | PLO 4, 6, 9, 10   |
 |        | Total                              | 100%         |                                                                                                                                                              |                   |                   |
 
 ## Scoring method:
@@ -158,5 +160,7 @@ Tutorial: Tutorial, experiment, discussion
 Self-study: Assessed internship, research, self-study
 
 Approved by
+
+Hanoi,………..2024
 
 ## Compiler

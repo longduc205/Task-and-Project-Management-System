@@ -14,25 +14,27 @@ Teams must choose one of the following topics from the list below or propose a n
 
 |   ID | Project name                          | Note                                                                                                                                                                               |
 |------|---------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|   1. | Hospital Management System Project    | Focus on optimizing healthcare operations, offering features such as patient registration, appointment scheduling, and electronic health records for efficient hospital management |
-|   2. | Library Management System Project     | Organize and automate library processes, including book cataloging, lending, and tracking, to enhance the overall library experience                                               |
-|   3. | Blood Donor Management System Project | The Blood Donor Management System Project facilitates the efficient coordination of blood donation activities, ensuring a timely and adequate blood supply                         |
-|   4. | Supermarket Management System Project | The project includes features such as inventory control, sales tracking, and employee management to optimize the overall workflow and enhance the customer shopping experience.    |
+|    1 | Hospital Management System Project    | Focus on optimizing healthcare operations, offering features such as patient registration, appointment scheduling, and electronic health records for efficient hospital management |
+|    2 | Library Management System Project     | Organize and automate library processes, including book cataloging, lending, and tracking, to enhance the overall library experience                                               |
+|    3 | Blood Donor Management System Project | The Blood Donor Management System Project facilitates the efficient coordination of blood donation activities, ensuring a timely and adequate blood supply                         |
+|    4 | Supermarket Management System Project | The project includes features such as inventory control, sales tracking, and employee management to optimize the overall workflow and enhance the customer shopping experience.    |
 
 |   5. | Warehouse Management System Project             | The project facilitates inventory tracking, order fulfillment, and logistics coordination to ensure efficient utilization of space, timely deliveries, and accurate inventory management.                  |
 |------|-------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|   6. | Tourism Management System Project               | The project includes features such as booking management, itinerary planning, and customer relationship management to streamline travel agency operations and enhance the overall experience for travelers |
-|   7. | Railway Management System Project               | The project includes modules for ticket booking, scheduling, and passenger information, aiming to improve efficiency and provide a seamless experience for railway travelers.                              |
-|   8. | Vehicle Rental Management System Project        | The project includes features such as booking management, fleet tracking, and customer billing to enhance the overall efficiency and reliability of vehicle rental businesses.                             |
-|   9. | Water Supply Management System Project          | The project includes features such as monitoring water quality, tracking consumption, and managing infrastructure maintenance, contributing to efficient and sustainable water supply management.          |
-|  10. | Municipal or City Management System             | Develop a system for local governments to manage citizen services, permits, and infrastructure maintenance                                                                                                 |
-|  11. | Hotel Reservation and Booking System            | Develop a system for hotels and accommodation providers to manage room reservations, check-ins, check-outs, and billing                                                                                    |
-|  12. | Employee Attendance and Leave Management System | Design a system for companies to track employee attendance, leaves, and work hours. It can also manage leave requests and approvals.                                                                       |
-|  13. | Student Information System                      | Develop a system for educational institutions to manage student records, grades, attendance, and course enrollment.                                                                                        |
+|    6 | Tourism Management System Project               | The project includes features such as booking management, itinerary planning, and customer relationship management to streamline travel agency operations and enhance the overall experience for travelers |
+|    7 | Railway Management System Project               | The project includes modules for ticket booking, scheduling, and passenger information, aiming to improve efficiency and provide a seamless experience for railway travelers.                              |
+|    8 | Vehicle Rental Management System Project        | The project includes features such as booking management, fleet tracking, and customer billing to enhance the overall efficiency and reliability of vehicle rental businesses.                             |
+|    9 | Water Supply Management System Project          | The project includes features such as monitoring water quality, tracking consumption, and managing infrastructure maintenance, contributing to efficient and sustainable water supply management.          |
+|   10 | Municipal or City Management System             | Develop a system for local governments to manage citizen services, permits, and infrastructure maintenance                                                                                                 |
+|   11 | Hotel Reservation and Booking System            | Develop a system for hotels and accommodation providers to manage room reservations, check-ins, check-outs, and billing                                                                                    |
+|   12 | Employee Attendance and Leave Management System | Design a system for companies to track employee attendance, leaves, and work hours. It can also manage leave requests and approvals.                                                                       |
+|   13 | Student Information System                      | Develop a system for educational institutions to manage student records, grades, attendance, and course enrollment.                                                                                        |
 
 Task and Project
 
-Management System Include features like task assignment, deadlines, progress tracking,
+Management System
+
+Include features like task assignment, deadlines, progress tracking,
 
 ## 3. Detailed Requirements &amp; Deliverables
 
@@ -86,11 +88,11 @@ Students are expected to use and show evidence of the following tools in their r
 |    5 | Risk Management                 | Assess students' understanding of risk management by requiring them to identify potential risks, assess their impact, and develop strategies for mitigating or responding to these risks. This helps students develop critical thinking skills in anticipating and addressing project challenges. |       1 |
 |    6 | Communication and Collaboration | Emphasize the importance of communication within a project team. Evaluate how well students establish communication channels, conduct team                                                                                                                                                        |       1 |
 
-|       |               | meetings, and facilitate collaboration. This can include documentation of decisions, progress reports, and effective use of project management tools   |      |
-|-------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|------|
-| 7     | Prototype     | Good                                                                                                                                                   |  2.5 |
-| 8     | Report format | Good                                                                                                                                                   | 0.25 |
-| Total | Total         | Total                                                                                                                                                  |   10 |
+|       |               | meetings, and facilitate collaboration. This can include documentation of decisions, progress reports, and effective use of project management tools   |       |
+|-------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|-------|
+| 7     | Prototype     | Good                                                                                                                                                   |  2.5  |
+| 8     | Report format | Good                                                                                                                                                   |  0.25 |
+| Total | Total         | Total                                                                                                                                                  | 10    |
 
 ## 6. Submission Instructions
 
